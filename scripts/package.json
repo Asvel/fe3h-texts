@@ -1,0 +1,9 @@
+{
+  "name": "fe3h-texts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "yaml": "^2.0.1"
+  }
+}
