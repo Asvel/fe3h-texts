@@ -22,7 +22,7 @@ for (let sectionIndex = 0; sectionIndex < sectionCount; sectionIndex++) {
     const rows = tables[tableIndex] = new Array(rowCount);
     for (let rowIndex = 0; rowIndex < rowCount; rowIndex++) {
       const textOffset = tableOffset + 20 + read32(tableOffset + 20 + rowIndex * 4);
-      rows[rowIndex] = readString(textOffset);
+      rows[rowIndex] = readString(textOffset).replaceAll('\xa0', ' ');
     }
   }
 }
